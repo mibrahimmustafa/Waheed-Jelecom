@@ -1,0 +1,405 @@
+/**
+ * Bilingual Translation Dictionary for Waheed Mohamed Eid's Portfolio
+ * Arabic & English Data
+ */
+const translations = {
+  ar: {
+    // Header & Navigation
+    siteTitle: "وحيد محمد عيد | محاسب أول ومدير عمليات مالية",
+    navHome: "الرئيسية",
+    navAbout: "نبذة عني",
+    navExperience: "الخبرات المهنية",
+    navSkills: "المهارات المحاسبية",
+    navEducation: "التعليم والشهادات",
+    navContact: "تواصل معي",
+    navDownloadCv: "تحميل السيرة الذاتية (PDF)",
+    switchLang: "English",
+    themeToggle: "تبديل المظهر",
+
+    // Hero Section
+    badgeExperience: "خبرة أكثر من 20 عاماً في الإدارة المالية والمحاسبية",
+    heroGreeting: "مرحباً بكم، أنا",
+    heroName: "وحيد محمد عيد",
+    heroRole: "محاسب أول | إدارة العمليات المحاسبية والتقارير المالية",
+    heroDescription: "محاسب متمرس بخبرة تزيد عن عقدين في إدارة الحسابات المالية، إعداد القيود اليومية وموازين المراجعة، التسويات البنكية، مراقبة المخزون، وإعداد التقارير التحليلية الدقيقة للشركات والمؤسسات التجارية والعقارية والصناعية بالمملكة العربية السعودية ومصر.",
+    btnDownloadCV: "تحميل السيرة الذاتية PDF",
+    btnContactMe: "تواصل مباشر",
+    btnWhatsapp: "محادثة واتساب فورية",
+    heroLocation: "خميس مشيط، المملكة العربية السعودية",
+    heroPhone: "0561049787",
+    heroEmail: "wm569183@gmail.com",
+
+    // Stats Section
+    statExpNumber: "20+",
+    statExpLabel: "سنوات من الخبرة المهنية",
+    statCompaniesNumber: "6+",
+    statCompaniesLabel: "شركات ومؤسسات كبرى",
+    statReportsNumber: "100%",
+    statReportsLabel: "دقة في إعداد التقارير والتسويات",
+    statAuditNumber: "1000s+",
+    statAuditLabel: "معاملات وقيود محاسبية منجزة",
+
+    // About Section
+    aboutSectionTag: "نبذة مهنية",
+    aboutTitle: "ملخص المسيرة والخبرة المهنية",
+    aboutLead: "إتقان مهني، دقة متناهية في الأرقام، وإدارة مالية استراتيجية تدعم نمو الأعمال.",
+    aboutP1: "محاسب محترف بخبرة تتجاوز 20 عاماً متخصصة في العمليات المحاسبية الشاملة، إدارة الفروع، والإدارة المالية التشغيلية. خبير في إعداد قيود اليومية، موازين المراجعة، الحسابات الختامية، والتسويات البنكية الدقيقة، بالإضافة إلى الجرد الفعلي للمخازن ومتابعة حسابات العملاء والموردين.",
+    aboutP2: "معروف بالدقة العالية، التنظيم المنهجي، القدرة على حل المشكلات المالية المعقدة، والعمل بكفاءة فائقة تحت ضغوط العمل وإنجاز الإقفالات الدورية في المواعيد المحددة.",
+    aboutHighlight1: "إدارة الحسابات العامة وموازين المراجعة",
+    aboutHighlight2: "التسويات البنكية ومطابقة حسابات الموردين والعملاء",
+    aboutHighlight3: "مراقبة المخزون والجرد الدوري والمفاجئ",
+    aboutHighlight4: "إعداد التقارير المالية التحليلية للإدارة العليا",
+
+    // Experience Section
+    expSectionTag: "المسار الوظيفي",
+    expTitle: "الخبرات المهنية وسجل الإنجازات",
+    expSubtitle: "سجل حافل بالعطاء في كبرى الشركات التجارية، العقارية، الاتصالات والصناعية",
+    
+    // Job 1
+    job1Title: "محاسب أول",
+    job1Company: "شركة ربوة الخميس",
+    job1Location: "المملكة العربية السعودية",
+    job1Period: "2024 – حتى الآن",
+    job1Badge: "المنصب الحالي",
+    job1Desc: "إدارة وتسيير كافة الأنشطة المحاسبية اليومية للشركة وإعداد التقارير المالية الشاملة.",
+    job1Task1: "إدارة الأنشطة المحاسبية اليومية وإعداد التقارير المالية الدورية المطلوبة بدقة متناهية.",
+    job1Task2: "التنسيق المستمر مع العملاء والموردين ومتابعة كافة المعاملات والمطالبات المالية.",
+    job1Task3: "مراقبة التدفقات النقدية ومتابعة القيود والتسويات اليومية.",
+
+    // Job 2
+    job2Title: "محاسب عام ومخازن",
+    job2Company: "شركة الأطباء للمنظفات ومستحضرات التجميل",
+    job2Location: "مصر",
+    job2Period: "2021 – 2024",
+    job2Desc: "متابعة الحسابات العامة وحركة المخزون وإعداد قيود اليومية ومراقبة تكاليف الإنتاج والمبيعات.",
+    job2Task1: "تنفيذ الأنشطة المحاسبية اليومية ومراجعة الحسابات وقيود اليومية والترحيل لدفاتر الأستاذ.",
+    job2Task2: "مراقبة حركة المخزون والمنتجات التامة والمواد الأولية وإجراء مطابقات الجرد الفعلي.",
+    job2Task3: "إعداد التقارير المحاسبية الدورية ومتابعة حسابات الموردين والموزعين.",
+
+    // Job 3
+    job3Title: "محاسب",
+    job3Company: "شركة الصفوة للاستثمار العقاري",
+    job3Location: "مصر",
+    job3Period: "2015 – 2021",
+    job3Desc: "إدارة الحسابات المالية للمشاريع العقارية ومتابعة مستحقات العملاء والمقاولين.",
+    job3Task1: "إعداد قيود اليومية وموازين المراجعة ومراقبة بنود القوائم المالية للمشاريع.",
+    job3Task2: "مراجعة كشوف الحسابات البنكية ودفاتر الأستاذ ومطابقة أرصدة الحسابات بدقة تامة.",
+    job3Task3: "متابعة دفعات وأقساط العملاء ومستخلصات المقاولين والموردين.",
+
+    // Job 4
+    job4Title: "مدير فرع",
+    job4Company: "شركة الطيب للتجارة الدولية",
+    job4Location: "مصر",
+    job4Period: "2013 – 2015",
+    job4Desc: "الإشراف الإداري والمالي الكامل على عمليات الفرع وسير العمليات التجارية والخدمية.",
+    job4Task1: "إدارة عمليات الفرع التشغيلية والمالية، ومراقبة سير العمل واقتراح التحسينات الإدارية.",
+    job4Task2: "الإشراف على المعاملات اليومية ومتابعة العلاقات مع كبار العملاء والموردين.",
+    job4Task3: "متابعة تحقيق الأهداف البيعية والتحصيل ومراقبة المصروفات التشغيلية.",
+
+    // Job 5
+    job5Title: "محاسب قانوني ومراجع",
+    job5Company: "مكتب المحاسب القانوني / المستشار محمد نور الدين عبده",
+    job5Location: "مصر",
+    job5Period: "2011 – 2012",
+    job5Desc: "إعداد ومراجعة الحسابات والدفاتر المالية لعملاء المكتب وتدقيق المستندات.",
+    job5Task1: "إعداد ومراجعة الحسابات والقوائم المالية لمختلف الأنشطة التجارية والمهنية.",
+    job5Task2: "التعامل الاحترافي مع التوثيق المالي والمستندات والدفاتر المحاسبية المعتمدة.",
+
+    // Job 6
+    job6Title: "محاسب مالي وإداري",
+    job6Company: "شركة البنية للاتصالات – جليكوم (Gelecom)",
+    job6Location: "مصر",
+    job6Period: "2003 – 2011",
+    job6Desc: "إثبات ومراجعة العمليات المحاسبية والمستندية وإعداد التقارير المالية لقطاع الاتصالات.",
+    job6Task1: "تسجيل ومراجعة المعاملات المحاسبية اليومية وإعداد التقارير المالية المرتبطة بها.",
+    job6Task2: "متابعة الحسابات اليومية والتوثيق المالي والأرشفة المحاسبية الدقيقة.",
+    job6Task3: "متابعة حسابات الموردين وخطوط الخدمات والعهد النقدية.",
+
+    // Skills Section
+    skillsSectionTag: "الخبرات والمهارات",
+    skillsTitle: "الكفاءات والمهارات التخصصية",
+    skillsSubtitle: "مجموعة شاملة من المهارات المالية، المحاسبية، الإدارية والشخصية",
+    
+    skillCatAccounting: "المهارات والعمليات المحاسبية",
+    skillAcc1: "إعداد قيود اليومية وموازين المراجعة والتسويات المالية",
+    skillAcc2: "إعداد التقارير التحليلية ومراجعة بنود القوائم المالية",
+    skillAcc3: "مراجعة كشوف البنوك ودفاتر الأستاذ ومطابقة الأرصدة",
+    skillAcc4: "إدارة كروت الصنف ودفاتر المخازن والجرد الفعلي",
+    skillAcc5: "متابعة ومطابقة حسابات العملاء والموردين",
+    skillAcc6: "إدارة الفروع، خطط العمل وتطوير الإجراءات المالية",
+    skillAcc7: "التسويات الضريبية وحسابات القيمة المضافة والإقرارات",
+    skillAcc8: "الرقابة الداخلية وتدقيق المصروفات والعهد النقدية",
+
+    skillCatPersonal: "المهارات الشخصية والقيادية",
+    skillPer1: "الدقة العالية والتنظيم المنهجي",
+    skillPer2: "التعلم السريع ومواكبة التحديثات",
+    skillPer3: "تحمل المسؤولية والقيادة التشغيلية",
+    skillPer4: "العمل الجماعي وبناء فرق العمل",
+    skillPer5: "التواصل الفعال وبناء جسور الثقة",
+    skillPer6: "العمل تحت ضغط والالتزام بالمواعيد",
+
+    // Education & Additional Section
+    eduSectionTag: "المؤهلات واللغات",
+    eduTitle: "التعليم، اللغات والخبرات الإضافية",
+    eduDegreeTitle: "بكالوريوس تجارة (قسم المحاسبة)",
+    eduDegreeUni: "جامعة عين شمس – القاهرة",
+    eduDegreeYear: "دفعة 2003",
+    eduDegreeDesc: "دراسة أكاديمية متعمقة في أصول المحاسبة المالية، محاسبة التكاليف، المراجعة والتدقيق، والتشريعات الضريبية والتجارية.",
+    
+    languagesTitle: "اللغات المتقنة",
+    langArabic: "اللغة العربية",
+    langArabicLevel: "اللغة الأم (Native)",
+    langEnglish: "اللغة الإنجليزية",
+    langEnglishLevel: "مستوى مهني في العمليات المالية (Working Proficiency)",
+    
+    additionalTitle: "معلومات وتخصصات إضافية",
+    cuppingTitle: "متخصص وخبير في جميع أنواع الحجامة العلاجية",
+    cuppingDesc: "خبرة واسعة واطلاع علمي وعملي في تطبيق كافة بروتوكولات الحجامة العلاجية والوقائية.",
+
+    // Contact Section
+    contactSectionTag: "تواصل مهني",
+    contactTitle: "جاهز لبدء تعاون ناجح وإضافة قيمة لمؤسستكم",
+    contactSubtitle: "يسعدني تواصلكم لمناقشة فرص العمل والتعاون المالي والمحاسبي",
+    contactInfoTitle: "بيانات التواصل المباشر",
+    contactLocationLabel: "الموقع الجغرافي",
+    contactLocationVal: "خميس مشيط، المملكة العربية السعودية",
+    contactPhoneLabel: "رقم الجوال / واتساب",
+    contactPhoneVal: "+966 56 104 9787 (0561049787)",
+    contactEmailLabel: "البريد الإلكتروني",
+    contactEmailVal: "wm569183@gmail.com",
+    contactDirectCall: "اتصال مباشر",
+    contactDirectWhatsapp: "محادثة عبر WhatsApp",
+    contactDirectEmail: "إرسال بريد إلكتروني",
+    contactCardCopy: "نسخ",
+    contactCopied: "تم النسخ بنجاح!",
+
+    // Quick Form
+    formNameLabel: "الاسم الكامل",
+    formNamePlaceholder: "أدخل اسمك أو اسم الشركة",
+    formEmailLabel: "البريد الإلكتروني",
+    formEmailPlaceholder: "example@domain.com",
+    formSubjectLabel: "الموضوع / المسمى الوظيفي",
+    formSubjectPlaceholder: "فرصة عمل / استشارة مالية",
+    formMessageLabel: "الرسالة",
+    formMessagePlaceholder: "اكتب تفاصيل رسالتك أو العرض الوظيفي هنا...",
+    formSubmitBtn: "إرسال الرسالة عبر البريد",
+
+    // Captcha Modal
+    captchaModalTitle: "التحقق الأمني لتنزيل السيرة الذاتية",
+    captchaModalSubtitle: "يرجى كتابة رمز الكابتشا البصري الموضح أدناه لتحميل ملف الـ PDF فوراً.",
+    captchaNote: "ملاحظة: النظام يتجاهل حالة الأحرف (يمكنك كتابتها بحروف كبيرة أو صغيرة كما تشاء).",
+    captchaInputPlaceholder: "أدخل رمز التحقق هنا...",
+    captchaVerifyBtn: "تحقق وتنزيل السيرة الذاتية (PDF)",
+    captchaRefreshTitle: "توليد رمز جديد",
+    captchaAudioTitle: "الاستماع إلى الرمز صوتياً",
+    captchaCancelBtn: "إلغاء",
+    captchaErrorMsg: "رمز التحقق غير صحيح، يرجى المحاولة مرة أخرى!",
+    captchaSuccessMsg: "تم التحقق بنجاح! جاري بدء تنزيل السيرة الذاتية...",
+
+    // Footer
+    footerCopyright: "جميع الحقوق محفوظة © 2024 - 2026 للأستاذ وحيد محمد عيد | محاسب أول",
+    footerQuickLinks: "روابط سريعة",
+    footerHostingerReady: "موقع سريع، آمن ومستضاف على خوادم Hostinger فائقة الأداء",
+    backToTop: "للأعلى"
+  },
+
+  en: {
+    // Header & Navigation
+    siteTitle: "Waheed Mohamed Eid | Senior Accountant & Financial Operations Specialist",
+    navHome: "Home",
+    navAbout: "About Me",
+    navExperience: "Experience",
+    navSkills: "Skills & Expertise",
+    navEducation: "Education",
+    navContact: "Contact",
+    navDownloadCv: "Download CV (PDF)",
+    switchLang: "العربية",
+    themeToggle: "Toggle Theme",
+
+    // Hero Section
+    badgeExperience: "20+ Years of Executive Accounting & Financial Experience",
+    heroGreeting: "Welcome, I am",
+    heroName: "Waheed Mohamed Eid",
+    heroRole: "Senior Accountant | Financial Operations & Reporting Specialist",
+    heroDescription: "Seasoned Senior Accountant with over 20 years of hands-on expertise in financial administration, journal entries, trial balance reconciliation, ledger audits, inventory control, and analytical reporting across real estate, manufacturing, trading, and telecommunications sectors in Saudi Arabia and Egypt.",
+    btnDownloadCV: "Download Verified CV (PDF)",
+    btnContactMe: "Get in Touch",
+    btnWhatsapp: "Instant WhatsApp Chat",
+    heroLocation: "Khamis Mushait, Saudi Arabia",
+    heroPhone: "+966 56 104 9787",
+    heroEmail: "wm569183@gmail.com",
+
+    // Stats Section
+    statExpNumber: "20+",
+    statExpLabel: "Years Professional Experience",
+    statCompaniesNumber: "6+",
+    statCompaniesLabel: "Leading Enterprises & Firms",
+    statReportsNumber: "100%",
+    statReportsLabel: "Accuracy in Reconciliations & P&L",
+    statAuditNumber: "1000s+",
+    statAuditLabel: "Financial Transactions & Audits",
+
+    // About Section
+    aboutSectionTag: "Professional Summary",
+    aboutTitle: "Strategic Financial Acumen & Leadership",
+    aboutLead: "Uncompromising precision in numbers, rigorous internal control, and financial operations management.",
+    aboutP1: "Accountant with more than 20 years of experience in accounting operations, branch management, and financial administration. Highly skilled in preparing journal entries, trial balances, analytical financial statements, bank reconciliations, inventory audits, and managing customer and vendor ledger accounts.",
+    aboutP2: "Widely recognized for extreme accuracy, structural organization, proactive problem-solving, and the distinct ability to perform effectively under high-pressure closing cycles and demanding deadlines.",
+    aboutHighlight1: "General Ledger & Trial Balance Management",
+    aboutHighlight2: "Bank Reconciliations & AR/AP Settlements",
+    aboutHighlight3: "Stock Auditing, Inventory Control & Costing",
+    aboutHighlight4: "Executive Analytical & Management Reporting",
+
+    // Experience Section
+    expSectionTag: "Career Timeline",
+    expTitle: "Professional Work Experience",
+    expSubtitle: "A proven track record across leading commercial, industrial, real estate, and telecom corporations",
+    
+    // Job 1
+    job1Title: "Senior Accountant",
+    job1Company: "Rabwat Al-Khamis Company",
+    job1Location: "Saudi Arabia",
+    job1Period: "2024 – Present",
+    job1Badge: "Current Role",
+    job1Desc: "Overseeing day-to-day accounting operations and formulating comprehensive financial management reports.",
+    job1Task1: "Manage daily corporate accounting workflows and prepare periodic financial reports with absolute accuracy.",
+    job1Task2: "Coordinate with key customers and suppliers, monitoring receivables, payables, and settlement schedules.",
+    job1Task3: "Supervise daily cash flow, journal entries, and ledger account verifications.",
+
+    // Job 2
+    job2Title: "General & Inventory Accountant",
+    job2Company: "Doctors Company for Detergents & Cosmetics",
+    job2Location: "Egypt",
+    job2Period: "2021 – 2024",
+    job2Desc: "Handled daily accounting activities, cost center allocations, journal entries, and inventory movements.",
+    job2Task1: "Performed daily accounting entries, reviewed general ledgers, and posted verified financial records.",
+    job2Task2: "Monitored raw materials and finished goods inventory, conducting periodic physical stock checks.",
+    job2Task3: "Drafted periodic financial statements, cost analysis, and vendor balance reconciliations.",
+
+    // Job 3
+    job3Title: "Accountant",
+    job3Company: "Al Safwa Real Estate Investment Company",
+    job3Location: "Egypt",
+    job3Period: "2015 – 2021",
+    job3Desc: "Managed financial accounts for large-scale real estate projects, contractors, and client installment portfolios.",
+    job3Task1: "Prepared journal entries, trial balances, and audited balance sheet and income statement items.",
+    job3Task2: "Reviewed complex multi-bank statements, ledgers, and resolved reconciliation variances.",
+    job3Task3: "Monitored customer installment collections, contractor billing, and project-based cash flows.",
+
+    // Job 4
+    job4Title: "Branch Manager",
+    job4Company: "Al Tayeb International Trading Company",
+    job4Location: "Egypt",
+    job4Period: "2013 – 2015",
+    job4Desc: "Full administrative and financial management of branch operations, commercial activities, and staff.",
+    job4Task1: "Managed overall branch operations, streamlined operational workflows, and instituted financial controls.",
+    job4Task2: "Supervised high-volume daily transactions and maintained key relationships with clients and vendors.",
+    job4Task3: "Oversaw sales target achievements, cash collections, and optimized operational branch expenditures.",
+
+    // Job 5
+    job5Title: "Public Accountant & Auditor",
+    job5Company: "Accounting Office / Consultant Mohamed Nour El-Din Abdo",
+    job5Location: "Egypt",
+    job5Period: "2011 – 2012",
+    job5Desc: "Prepared, reviewed, and audited financial statements and ledgers for diverse corporate clients.",
+    job5Task1: "Prepared and audited books of accounts and financial statements across commercial and service sectors.",
+    job5Task2: "Handled statutory documentation, tax files, and regulatory compliance requirements.",
+
+    // Job 6
+    job6Title: "Financial & Administrative Accountant",
+    job6Company: "Al Bania Telecommunications Company – Gelecom",
+    job6Location: "Egypt",
+    job6Period: "2003 – 2011",
+    job6Desc: "Maintained accounting records, documentation, and operational financial reporting for telecom projects.",
+    job6Task1: "Recorded and audited accounting transactions, petty cash, and generated periodic financial summaries.",
+    job6Task2: "Followed up on daily accounts, financial archiving, and supplier contract settlement files.",
+    job6Task3: "Audited telecommunication service line invoices and operational expenses.",
+
+    // Skills Section
+    skillsSectionTag: "Core Competencies",
+    skillsTitle: "Accounting & Operational Skills",
+    skillsSubtitle: "Comprehensive technical proficiency and seasoned organizational management abilities",
+    
+    skillCatAccounting: "Financial & Accounting Mastery",
+    skillAcc1: "Journal Entries, Trial Balances & Financial Reconciliations",
+    skillAcc2: "Analytical Reporting & Financial Statement Analysis",
+    skillAcc3: "Bank Statement Auditing, Ledgers & Balance Reconciliations",
+    skillAcc4: "Inventory Card Tracking, Stock Ledgers & Physical Balance Checks",
+    skillAcc5: "Customer (AR) & Supplier (AP) Account Management",
+    skillAcc6: "Branch Operations Management & Internal Workflow Optimization",
+    skillAcc7: "VAT, Tax Filings & Financial Compliance Standards",
+    skillAcc8: "Internal Controls, Petty Cash & Operational Expense Auditing",
+
+    skillCatPersonal: "Personal & Leadership Strengths",
+    skillPer1: "Extreme Accuracy & Methodical Organization",
+    skillPer2: "Rapid Learning & Technological Adaptability",
+    skillPer3: "High Responsibility & Operational Ownership",
+    skillPer4: "Team Leadership & Cross-Functional Collaboration",
+    skillPer5: "Effective Communication & Stakeholder Trust",
+    skillPer6: "Thriving Under High Pressure & Stringent Deadlines",
+
+    // Education & Additional Section
+    eduSectionTag: "Credentials & Languages",
+    eduTitle: "Education, Languages & Certifications",
+    eduDegreeTitle: "Bachelor of Commerce (Major in Accounting)",
+    eduDegreeUni: "Ain Shams University – Cairo",
+    eduDegreeYear: "Graduation: 2003",
+    eduDegreeDesc: "Comprehensive academic foundation in financial accounting, cost accounting, auditing principles, corporate taxation, and commercial law.",
+    
+    languagesTitle: "Language Proficiencies",
+    langArabic: "Arabic",
+    langArabicLevel: "Native Speaker",
+    langEnglish: "English",
+    langEnglishLevel: "Working Professional Proficiency in Financial Operations",
+    
+    additionalTitle: "Additional Specialization",
+    cuppingTitle: "Certified Specialist in Holistic Cupping Therapy",
+    cuppingDesc: "Deep practical knowledge and certified expertise in preventative and therapeutic cupping modalities.",
+
+    // Contact Section
+    contactSectionTag: "Get In Touch",
+    contactTitle: "Available for Senior Accounting & Financial Leadership",
+    contactSubtitle: "Let's discuss how my 20+ years of financial expertise can add value to your organization.",
+    contactInfoTitle: "Direct Contact Information",
+    contactLocationLabel: "Location",
+    contactLocationVal: "Khamis Mushait, Saudi Arabia",
+    contactPhoneLabel: "Phone / WhatsApp",
+    contactPhoneVal: "+966 56 104 9787 (0561049787)",
+    contactEmailLabel: "Email Address",
+    contactEmailVal: "wm569183@gmail.com",
+    contactDirectCall: "Call Directly",
+    contactDirectWhatsapp: "WhatsApp Chat",
+    contactDirectEmail: "Send Email",
+    contactCardCopy: "Copy",
+    contactCopied: "Copied!",
+
+    // Quick Form
+    formNameLabel: "Full Name",
+    formNamePlaceholder: "Your name or company name",
+    formEmailLabel: "Email Address",
+    formEmailPlaceholder: "example@domain.com",
+    formSubjectLabel: "Subject / Position",
+    formSubjectPlaceholder: "Job Opportunity / Financial Consulting",
+    formMessageLabel: "Message",
+    formMessagePlaceholder: "Write your inquiry or job opportunity details here...",
+    formSubmitBtn: "Send Message via Email",
+
+    // Captcha Modal
+    captchaModalTitle: "Security Verification to Download CV",
+    captchaModalSubtitle: "Please enter the security captcha code shown below to immediately download the official PDF CV.",
+    captchaNote: "Note: The verification is CASE-INSENSITIVE (you can type uppercase or lowercase letters).",
+    captchaInputPlaceholder: "Enter captcha code here...",
+    captchaVerifyBtn: "Verify & Download Official CV (PDF)",
+    captchaRefreshTitle: "Generate New Code",
+    captchaAudioTitle: "Listen to Code",
+    captchaCancelBtn: "Cancel",
+    captchaErrorMsg: "Incorrect captcha code. Please try again!",
+    captchaSuccessMsg: "Verification successful! Starting your PDF download...",
+
+    // Footer
+    footerCopyright: "All Rights Reserved © 2024 - 2026 Waheed Mohamed Eid | Senior Accountant",
+    footerQuickLinks: "Quick Navigation",
+    footerHostingerReady: "Ultra-fast, secure & ready for Hostinger high-performance hosting",
+    backToTop: "Back to Top"
+  }
+};
