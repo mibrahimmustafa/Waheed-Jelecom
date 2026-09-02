@@ -28,6 +28,10 @@ const translations = {
     heroLocation: "خميس مشيط، المملكة العربية السعودية",
     heroPhone: "0561049787",
     heroEmail: "wm569183@gmail.com",
+    badgeAccTitle: "الدقة المحاسبية",
+    badgeAccVal: "100% تسويات معتمدة",
+    badgeCareerTitle: "المسار المهني",
+    badgeCareerVal: "+20 عاماً من النجاح",
 
     // Stats Section
     statExpNumber: "20+",
@@ -228,6 +232,10 @@ const translations = {
     heroLocation: "Khamis Mushait, Saudi Arabia",
     heroPhone: "+966 56 104 9787",
     heroEmail: "wm569183@gmail.com",
+    badgeAccTitle: "Accounting Precision",
+    badgeAccVal: "100% Verified Accuracy",
+    badgeCareerTitle: "Career Track",
+    badgeCareerVal: "20+ Years Proven Success",
 
     // Stats Section
     statExpNumber: "20+",

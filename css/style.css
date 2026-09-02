@@ -125,7 +125,7 @@ body {
   min-height: 100vh;
 }
 
-/* Ambient Background Mesh */
+/* Ambient Background Glow */
 body::before {
   content: '';
   position: fixed;
@@ -500,17 +500,19 @@ button, input, textarea {
   color: var(--primary-light);
 }
 
-/* --- Hero Visual Card --- */
+/* --- Hero Visual Card & Fixed Floating Badges --- */
 .hero-visual-wrapper {
   position: relative;
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .executive-card-frame {
   position: relative;
   width: 100%;
-  max-width: 420px;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
@@ -518,7 +520,7 @@ button, input, textarea {
   backdrop-filter: blur(16px);
   box-shadow: var(--shadow-lg);
   text-align: center;
-  overflow: hidden;
+  z-index: 10;
 }
 
 .executive-card-frame::before {
@@ -529,6 +531,8 @@ button, input, textarea {
   right: 0;
   height: 5px;
   background: linear-gradient(90deg, var(--primary), var(--emerald), var(--gold));
+  border-top-left-radius: var(--radius-lg);
+  border-top-right-radius: var(--radius-lg);
 }
 
 .avatar-crest {
@@ -595,36 +599,59 @@ html[lang="en"] .card-highlights-list {
   font-size: 0.95rem;
 }
 
-/* Floating Badges */
+/* Floating Badges Positioning and Visibility */
 .floating-badge {
   position: absolute;
-  padding: 0.8rem 1.2rem;
+  padding: 0.75rem 1.25rem;
   background: var(--bg-card-solid);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-hover);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45), 0 0 20px var(--primary-glow);
   font-size: 0.85rem;
   font-weight: 700;
   color: var(--text-primary);
+  z-index: 40;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  white-space: nowrap;
   animation: float 4s ease-in-out infinite;
 }
 
+/* Arabic RTL positions */
+html[lang="ar"] .floating-badge.badge-top,
 .floating-badge.badge-top {
-  top: -20px;
-  left: -20px;
+  top: 5px;
+  right: -20px;
+  left: auto;
 }
 
+html[lang="ar"] .floating-badge.badge-bottom,
 .floating-badge.badge-bottom {
-  bottom: -20px;
+  bottom: 5px;
+  left: -20px;
+  right: auto;
+  animation-delay: 2s;
+}
+
+/* English LTR positions */
+html[lang="en"] .floating-badge.badge-top {
+  top: 5px;
+  left: -20px;
+  right: auto;
+}
+
+html[lang="en"] .floating-badge.badge-bottom {
+  bottom: 5px;
   right: -20px;
+  left: auto;
   animation-delay: 2s;
 }
 
 .floating-badge i {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--gold);
 }
 
@@ -1803,8 +1830,24 @@ html[lang="ar"] .scroll-top-btn {
     grid-template-columns: 1fr;
   }
 
-  .floating-badge {
-    display: none;
+  .floating-badge.badge-top {
+    top: -10px;
+    right: -5px;
+  }
+
+  .floating-badge.badge-bottom {
+    bottom: -10px;
+    left: -5px;
+  }
+
+  html[lang="en"] .floating-badge.badge-top {
+    top: -10px;
+    left: -5px;
+  }
+
+  html[lang="en"] .floating-badge.badge-bottom {
+    bottom: -10px;
+    right: -5px;
   }
 }
 
@@ -1820,6 +1863,11 @@ html[lang="ar"] .scroll-top-btn {
   #captchaCanvas {
     width: 200px;
     height: 60px;
+  }
+  
+  .floating-badge {
+    padding: 0.5rem 0.85rem;
+    font-size: 0.75rem;
   }
 }
 
