@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project": {
+    "name": "Waheed Mohamed Eid - Executive CV & Portfolio",
+    "version": "1.0.0",
+    "type": "Static Web Application",
+    "description": "Ultra-professional executive portfolio and interactive CV website with smart case-insensitive visual captcha PDF download, bilingual Arabic/English support, and dark/light mode.",
+    "owner": {
+      "name": "Waheed Mohamed Eid",
+      "role": "Senior Accountant | Accounting Operations & Financial Reporting",
+      "experience": "20+ Years",
+      "location": "Khamis Mushait, Saudi Arabia",
+      "email": "wm569183@gmail.com",
+      "phone": "+966561049787"
+    },
+    "repository": "git@github.com:mibrahimmustafa/Waheed-Jelecom.git"
+  },
+  "technology_stack": {
+    "frontend": {
+      "markup": "HTML5 (Semantic, SEO-ready, Schema.org Person JSON-LD)",
+      "styling": "Vanilla CSS3 (Design Tokens, Glassmorphism, CSS Grid & Flexbox, Dark/Light Themes, Print Stylesheet)",
+      "scripting": "Vanilla JavaScript ES6+ (Class-based architecture, Web Speech API, IntersectionObserver, Canvas API)",
+      "fonts": [
+        "Tajawal (Arabic Typography)",
+        "Plus Jakarta Sans (English Typography)"
+      ],
+      "iconography": "FontAwesome 6.5.1 (CDN)"
+    },
+    "security": {
+      "type": "Client-side Distorted Canvas Captcha",
+      "features": [
+        "Alphanumeric random code generation",
+        "Visual noise (bezier curve lines, random color dots, letter rotation & baseline shifts)",
+        "Case-insensitive validation (.toLowerCase())",
+        "Speech synthesis audio challenge (Web Speech API)",
+        "Automated PDF CV download on verification"
+      ]
+    },
+    "devops_and_hosting": {
+      "hosting_provider": "Hostinger",
+      "remote_root_path": "/home/u627514535/domains/rosybrown-woodcock-359682.hostingersite.com/public_html/",
+      "ci_cd_pipeline": "GitHub Actions",
+      "deployment_protocol": "SFTP (SSH File Transfer Protocol)",
+      "target_branches": ["master", "main"]
+    }
+  },
+  "file_structure": {
+    "root": {
+      "index.html": "Main entry point, semantic sections, schema, modals, and templates",
+      "architecture.json": "Project architectural definition and metadata specification",
+      "Waheed_Mohamed_Eid_CV_English.pdf": "Original verified PDF resume asset",
+      ".gitignore": "Git exclusion rules for OS and temporary artifacts"
+    },
+    "directories": {
+      "css/": {
+        "style.css": "Complete styling system, tokens, layout, dark/light themes, animations, and media queries"
+      },
+      "js/": {
+        "translations.js": "Bilingual dictionary mapping all UI elements for Arabic (RTL) and English (LTR)",
+        "captcha.js": "Canvas-based visual captcha generator, audio reader, validator, and PDF downloader",
+        "script.js": "Main application controller (theme toggle, i18n engine, counter animations, toasts, contact form)"
+      },
+      ".github/workflows/": {
+        "deploy.yml": "Automated SFTP deployment workflow to Hostinger on push"
+      }
+    }
+  },
+  "core_modules": [
+    {
+      "module_id": "i18n_engine",
+      "name": "Bilingual Internationalization Engine",
+      "source": "js/translations.js & js/script.js",
+      "functionality": "Instant client-side translation between Arabic (RTL) and English (LTR) using data-i18n attributes with localStorage persistence."
+    },
+    {
+      "module_id": "theme_manager",
+      "name": "Executive Theme Controller",
+      "source": "css/style.css & js/script.js",
+      "functionality": "Seamless toggling between Midnight Luxury Slate (Dark) and Crisp Slate (Light) themes with localStorage persistence."
+    },
+    {
+      "module_id": "captcha_security_engine",
+      "name": "Smart Security Captcha System",
+      "source": "js/captcha.js",
+      "functionality": "Generates distorted alphanumeric codes on HTML5 Canvas, supports case-insensitive entry, provides audio readouts, and triggers verified PDF downloads."
+    },
+    {
+      "module_id": "timeline_and_skills",
+      "name": "Career Timeline & Skills Showcase",
+      "source": "index.html & css/style.css",
+      "functionality": "Structured visualization of 20+ years of senior accounting roles across 6 major enterprises, education credentials, and core financial skills."
+    },
+    {
+      "module_id": "contact_and_toasts",
+      "name": "Direct Communication & Toast System",
+      "source": "js/script.js & index.html",
+      "functionality": "Interactive WhatsApp direct routing, phone/email copy buttons, mailto dispatch, and non-blocking toast notifications."
+    }
+  ]
+}
