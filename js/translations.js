@@ -53,6 +53,15 @@ const translations = {
     aboutHighlight2: "التسويات البنكية ومطابقة حسابات الموردين والعملاء",
     aboutHighlight3: "مراقبة المخزون والجرد الدوري والمفاجئ",
     aboutHighlight4: "إعداد التقارير المالية التحليلية للإدارة العليا",
+    aboutMethodologyTitle: "منهجية العمل المحاسبي المتكاملة",
+    aboutStep1Title: "التوثيق والقيود اليومية",
+    aboutStep1Desc: "تسجيل كافة المعاملات المالية وترحيلها لدفاتر الأستاذ العام ومطابقتها بمستندات الصرف والقبض.",
+    aboutStep2Title: "التسويات والمطابقات الدورية",
+    aboutStep2Desc: "إجراء المطابقات البنكية الشهرية، ومطابقة حسابات العملاء والموردين ومراقبة حركة الصندوق.",
+    aboutStep3Title: "مراقبة المخزون والجرد",
+    aboutStep3Desc: "متابعة كروت الصنف، مراقبة تكاليف المواد والمبيعات، ومطابقة الأرصدة الدفترية مع الجرد الفعلي.",
+    aboutStep4Title: "القوائم والتقارير التحليلية",
+    aboutStep4Desc: "إعداد ميزان المراجعة، قائمة الدخل، والتقارير المالية الدقيقة لدعم قرارات الإدارة التنفيذية.",
 
     // Experience Section
     expSectionTag: "المسار الوظيفي",
@@ -165,6 +174,7 @@ const translations = {
     contactTitle: "جاهز لبدء تعاون ناجح وإضافة قيمة لمؤسستكم",
     contactSubtitle: "يسعدني تواصلكم لمناقشة فرص العمل والتعاون المالي والمحاسبي",
     contactInfoTitle: "بيانات التواصل المباشر",
+    contactInfoSubtitle: "متاح للرد الفوري ومناقشة العروض الوظيفية",
     contactLocationLabel: "الموقع الجغرافي",
     contactLocationVal: "خميس مشيط، المملكة العربية السعودية",
     contactPhoneLabel: "رقم الجوال / واتساب",
@@ -203,6 +213,7 @@ const translations = {
     // Footer
     footerCopyright: "جميع الحقوق محفوظة © 2024 - 2026 للأستاذ وحيد محمد عيد | محاسب أول",
     footerQuickLinks: "روابط سريعة",
+    footerWhatsapp: "واتساب مباشر",
     footerHostingerReady: "موقع سريع، آمن ومستضاف على خوادم Hostinger فائقة الأداء",
     backToTop: "للأعلى"
   },
@@ -257,6 +268,15 @@ const translations = {
     aboutHighlight2: "Bank Reconciliations & AR/AP Settlements",
     aboutHighlight3: "Stock Auditing, Inventory Control & Costing",
     aboutHighlight4: "Executive Analytical & Management Reporting",
+    aboutMethodologyTitle: "Integrated Accounting Methodology",
+    aboutStep1Title: "Documentation & Daily Journal Entries",
+    aboutStep1Desc: "Recording all financial transactions, posting to general ledgers, and matching with disbursement and receipt vouchers.",
+    aboutStep2Title: "Periodic Reconciliations & Matching",
+    aboutStep2Desc: "Performing monthly bank reconciliations, matching AR/AP accounts, and monitoring treasury and cash movements.",
+    aboutStep3Title: "Inventory Control & Physical Audits",
+    aboutStep3Desc: "Tracking item cards, monitoring raw and finished goods costing, and reconciling book balances with physical counts.",
+    aboutStep4Title: "Financial Statements & Analytical Reports",
+    aboutStep4Desc: "Preparing trial balances, income statements, and rigorous financial analysis to support executive leadership decisions.",
 
     // Experience Section
     expSectionTag: "Career Timeline",
@@ -369,6 +389,7 @@ const translations = {
     contactTitle: "Available for Senior Accounting & Financial Leadership",
     contactSubtitle: "Let's discuss how my 20+ years of financial expertise can add value to your organization.",
     contactInfoTitle: "Direct Contact Information",
+    contactInfoSubtitle: "Available for immediate inquiries and job discussions",
     contactLocationLabel: "Location",
     contactLocationVal: "Khamis Mushait, Saudi Arabia",
     contactPhoneLabel: "Phone / WhatsApp",
@@ -407,6 +428,7 @@ const translations = {
     // Footer
     footerCopyright: "All Rights Reserved © 2024 - 2026 Waheed Mohamed Eid | Senior Accountant",
     footerQuickLinks: "Quick Navigation",
+    footerWhatsapp: "Direct WhatsApp",
     footerHostingerReady: "Ultra-fast, secure & ready for Hostinger high-performance hosting",
     backToTop: "Back to Top"
   }
